@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  transition: background-color 250ms ease-in-out;
+}
+
+h1 {
+  margin-top: 100px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white !important;
+  color: black;
+}
+
+button.accordion-button:focus {
+  box-shadow: inherit;
+}
+
+.title {
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
+  font-size: 3em;
+}
+
+.accordion {
+  width: 50%;
+  border-radius: 100px;
+  background-color: var(--foreground-color);
+  color: var(--secondary-text-color);
+}
+
+.accordion-button {
+  font-size: 1em;
+}
+
+.accordion-item {
+  background-color: var(--foreground-color);
+  color: var(--secondary-text-color);
+}
+
+.selectorArea {
+  margin: 50px auto;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  gap: 1em;
+  background-color: var(--foreground-color);
+  color: var(--secondary-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.selectorArea .form-select {
+  width: 100%;
+}
+
+.selectorArea .form-control {
+  height: 50px;
+  line-height: 1.2;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+  .selectorArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 50%;
+  }
+
+  .state-form, .email-form, .buttons {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .state-form .form-select, 
+  .email-form .form-control, 
+  .buttons Button {
+    height: 50px;
+    line-height: 1.2;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .email-form .form-control {
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .buttons Button {
+    flex: 1;
+    margin: 0 5px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
