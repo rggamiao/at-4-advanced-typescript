@@ -1,7 +1,6 @@
 import React from 'react';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend, Chart } from 'chart.js';
-import { Chart } from 'chart.js/dist';
-
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Pie } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -36,7 +35,7 @@ const PieChart: React.FC<PieChartProps> = ({ data }) => {
 
   return (
     <div style={{ width: '300px', height: '300px' }}>
-      <Chart data={data} options={options} />
+      <Pie data={data} options={options} />
     </div>
   );
 };
