@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
-import PieChart from "../components/PieChart";
+import PieChart from "./components/PieChart";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Accordion from 'react-bootstrap/Accordion';
 import './App.css';
-import { Toggle } from "../components/toggle";
+import { Toggle } from "./components/toggle";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { stateFacts } from './stateFacts';
