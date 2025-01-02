@@ -88,7 +88,6 @@ const states: State[] = [
   { code: "WY", name: "Wyoming" }
 ];
 
-
 function App() {
   const [chartData, setChartData] = useState<ChartData>({
     labels: ['Right-handed', 'Left-handed'],
